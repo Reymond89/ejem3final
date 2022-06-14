@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+    {% block title %}
+
+
+
+    {% endblock  %}
+    </title>
+</head>
+<body>
+
+    <h1>Pagina Web, creada por Reymond Caceres</h1>
+
+    <ul>
+        <li>
+            <a href="/inicio">QUE ES EL COVID-19</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/pagina">SINTOMAS</a>
+        </li>
+    </ul>
+
+    <div class="content">
+        {% block content %}
+        
+        
+        
+        {% endblock  %}
+
+    </div>
+
+
+
+    <footer>
+        Pagina web creada por Reymond Caceres,  {% now "d/m/y" %} 
+
+    </footer>
+
+    
+</body>
+
+
+
+</html>
